@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.ts"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["naive-ui/volar"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@projects/*": ["./src/projects/*"],
+      "@bpm/*": ["./src/projects/bpm/*"],
+      "@tcm/*": ["./src/projects/tcm/*"]
+    }
+  }
+}

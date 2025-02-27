@@ -1,0 +1,60 @@
+[package]
+name = "byz_core"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+name = "byz_core"
+path = "src/lib.rs"
+
+[dependencies]
+async-stream = { workspace = true }
+aes-gcm = { workspace = true }
+arc-swap = { workspace = true }
+axum = { workspace = true }
+axum-extra = { workspace = true }
+anyhow = { workspace = true }
+chrono = { workspace = true }
+captcha_rust = { workspace = true }
+dotenv = { workspace = true }
+futures = { workspace = true }
+hex = { workspace = true }
+hyper = { workspace = true }
+hyper-util = { workspace = true }
+headers = { workspace = true }
+http-body-util = { workspace = true }
+jsonwebtoken = { workspace = true }
+md5 = { workspace = true }
+mime = { workspace = true }
+once_cell = { workspace = true }
+redis = { workspace = true }
+rustls-pemfile = { workspace = true }
+rand = { workspace = true }
+reqwest = { workspace = true }
+sea-orm = { workspace = true }
+sea-query = { workspace = true }
+smcrypto = { workspace = true }
+scru128 = { workspace = true }
+sysinfo = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+skytable = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = { workspace = true }
+tokio-rustls = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+tower-web = { workspace = true }
+tracing = { workspace = true }
+tracing-appender = { workspace = true }
+tracing-subscriber = { workspace = true }
+time = { workspace = true }
+toml = { workspace = true }
+user-agent-parser = { workspace = true }
+utoipa = { workspace = true }
+utoipa-axum = { workspace = true }
+utoipa-swagger-ui = { workspace = true }
+# 数据库实体
+byz_entity = { path = "../entity" }
+# 数据库版本控制
+byz_migration = { path = "../migration" }

@@ -1,0 +1,15 @@
+[package]
+name = "byz_entity"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+name = "byz_entity"
+path = "src/lib.rs"
+
+[dependencies]
+sea-orm = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+utoipa = { workspace = true }
+utoipa-swagger-ui = { workspace = true }

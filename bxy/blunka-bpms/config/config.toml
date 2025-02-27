@@ -1,0 +1,60 @@
+
+[server]
+name = "blunka-bpms"
+version = "0.1.0"
+# 服务器ip 端口
+address = "0.0.0.0:3000"
+# 服务器ssl
+ssl = false
+# 响应数据压缩
+content_gzip = true
+# 缓存时间 单位秒
+cache_time = 600
+#  缓存方式
+cache_method = 1 # 0: memory  1: skytable
+# api前缀
+api_prefix = "/api"
+
+[skytable]
+server = "127.0.0.1"
+port = 2003
+
+[web]
+dir = "data/_web"
+index = "index.html"
+upload_dir = "data/_upload"
+upload_url = "/upload"
+
+[cert]
+cert = "config/cert/cert.pem"
+key = "config/cert/key.pem"
+
+[casbin]
+model_file = "config/casbin_conf/rbac_model.conf"
+policy_file = "config/casbin_conf/rbac_policy.csv"
+
+[log]
+dir = "data/log"
+file = "app_log"
+# 允许操作日志
+enable_oper_log = true
+# 日志级别
+log_level = "DEBUG" #  TRACE DEBUG INFO WARN ERROR
+
+[system]
+super_user = ["03cv1qojjnl1tjl2xyakbwpj3"]
+user_agent_parser = "config/regexes.yaml"
+
+[jwt]
+# 单位 分钟
+jwt_exp = 14400       # 10天 14400
+jwt_secret = 'secret'
+
+[database]
+url = 'mysql://root:123456@127.0.0.1:3306/blunka_test'
+max_connections = 20
+min_connections = 5
+connect_timeout = 8
+idle_timeout = 8
+sqlx_logging = false
+sqlx_logging_level = 'info'

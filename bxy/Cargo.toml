@@ -1,0 +1,88 @@
+[workspace]
+resolver = "2"
+
+# 工作空间
+members = ["core", "entity", "migration","blunka-bpms"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["xusw <xusw@blunka.com>"]
+description = "Blunka BPM"
+license = "MIT"
+license-file = "LICENSE"
+repository = "https://github.com/blunka/blunka-bpm"
+
+[workspace.dependencies]
+async-stream = { version = "0.3.6" }
+async-std = { version = "1", features = ["attributes", "tokio1"] }
+aes-gcm = { version = "0.10.3" }
+arc-swap = { version = "1.7.1" }
+axum = { version = "0.8.1", features = ["multipart", "macros", "http2"] }
+axum-extra = { version = "0.10.0", features = [
+    "typed-header",
+    "query",
+    "json-deserializer",
+] }
+anyhow = { version = "1" }
+chrono = { version = "0.4.38" }
+captcha_rust = { version = "0.1.3" }
+dotenv = { version = "0.15.0" }
+futures = { version = "0.3.31" }
+hex = { version = "0.4.2" }
+hyper = { version = "1.5.2" }
+hyper-util = { version = "0.1.10" }
+headers = { version = "0.4.0" }
+http-body-util = { version = "0.1.2" }
+jsonwebtoken = { version = "9.3.0" }
+md5 = { version = "0.7.0" }
+mime = { version = "0.3.17" }
+once_cell = { version = "1.20.2" }
+redis = { version = "0.28.1" }
+rustls-pemfile = { version = "2.2.0" }
+rand = { version = "0.8.5" }
+reqwest = { version = "0.12.9", features = ["json"] }
+sea-orm = { version = "1.1.0", features = [
+    "runtime-tokio-native-tls",
+    "macros",
+    "debug-print",
+    "sqlx-mysql",
+] }
+sea-query = { version = "0.32.1" }
+smcrypto = { version = "0.3.1" }
+scru128 = { version = "3.1.0" }
+sysinfo = { version = "0.33.0" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0.137" }
+serde_derive = { version = "1.0" }
+skytable = { version = "0.8.11" }
+tokio = { version = "1.43.0", features = [
+    "rt-multi-thread",
+    "macros",
+    "parking_lot",
+    "signal",
+] }
+tokio-stream = { version = "0.1.16" }
+tokio-rustls = { version = "0.26.0" }
+tower = { version = "0.5.1", features = ["util", "make"] }
+tower-http = { version = "0.6.1", features = [
+    "cors",
+    "fs",
+    "compression-gzip",
+    "trace",
+] }
+tower-web = { version = "0.3.7" }
+tracing = { version = "0.1.40", features = ["std"] }
+tracing-appender = { version = "0.2.3" }
+tracing-subscriber = { version = "0.3.18", features = [
+    "json",
+    "env-filter",
+    "local-time",
+    "registry",
+] }
+time = { version = "0.3.37" }
+toml = { version = "0.8.19" }
+user-agent-parser = { version = "0.3.6" }
+utoipa = { version = "5.1.3", features = ["axum_extras", "chrono", "debug"] }
+utoipa-axum = { version = "0.2.0" }
+utoipa-swagger-ui = { version = "9.0.0", features = ["axum"] }

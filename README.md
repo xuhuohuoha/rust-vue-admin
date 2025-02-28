@@ -1,28 +1,56 @@
-2025.2.27
+# Rust-Vue-Admin
+
+## 1 项目简介
+
+适用于全栈快速构建项目的业务框架，基于 `Rust` + `Vu3` 构建，自动权限配置体系、通用业务功能，支持扩展及自定义。
+
+## 2 安装指南
+
+### 2.1 克隆仓库
+ bash git clone https://github.com/xuhuohuoha/rust-vue-admin.git
+
+### 2.2 安装依赖
+
+#### 2.2.1 前端依赖
+
+基于 Vue3 + Vite + Pinia + Router + Naive UI 构建，详见项目中`package.json`
+
+npm install
+#### 2.2.2 后端依赖
+
+基于 Rust + cmake 构建，详见项目中`Cargo.toml`
+
+1. install cmake
+
+2. cargo run
+
+## 3 使用说明
+
+### 3.1 项目配置
+
+第一步：恢复数据库（mysql）,脚本位置 bxy\blunka-bpms\db\test.sql
+
+第二步：修改配置文件`.env`，文件位置 bxy\blunka-bpms\.env
+
+第三步：修改配置文件`config.toml`，文件位置 bxy\blunka-bpms\config\config.toml
+
+第四步：启动后端项目 cargo run
+
+第五步：启动前端项目 yarn dev
+
+第六步：访问项目：http://localhost:3000
+
+## 4 贡献指南
+
+## 5 许可证
+
+MIT License
+
+## 6 联系
+
+可以通过 icefrozen2013@hotmail.com 联系我
 
 
-简要说明：
-
-一）基于 Rust + Vue3 + Naive UI + Pinia + Router
-
-二）想法：简化开发，提供权限动态配置体系，开发过程中提供接口和业务表单页面，通过快速配置构建系统
-
-三）其他：仍需进一步开发更多功能，修复bug；
-
-
-部署说明：
-
-第一步：恢复db文件夹中的数据库（mysql）
-
-第二步：修改配置文件
-
-1、.env配置文件：包含主机、端口、sea-orm-migration（此处数据库连接仅用于 sea-orm-cli）
-
-2、config/config.toml：仅需修改database的url
-
-第三步：启动 exe
-
-第四步：访问系统：默认 http://127.0.0.1/8080 
 
 
 

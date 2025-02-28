@@ -1,6 +1,6 @@
 <template>
   <div class="title">
-    @copyright Nanjing Blunka Network Technology Co. Ltd.
+    @copyright
   </div>
 </template>
 <script setup lang="ts" name="BFooter">

@@ -2,16 +2,11 @@
 resolver = "2"
 
 # 工作空间
-members = ["core", "entity", "migration","blunka-bpms"]
+members = ["core", "entity", "migration", "blunka-bpms"]
 
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
-authors = ["xusw <xusw@blunka.com>"]
-description = "Blunka BPM"
-license = "MIT"
-license-file = "LICENSE"
-repository = "https://github.com/blunka/blunka-bpm"
 
 [workspace.dependencies]
 async-stream = { version = "0.3.6" }

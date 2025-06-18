@@ -56,7 +56,7 @@ Email: icefrozen2013@hotmail.com
 
 欢迎加群，一起学习、相互交流。
 
-<img src="./bxy_vue/public/qrcode_rust.jpg">
+<img src="./bxy_vue/public/qrcode_rust.jpg" style="height:500px;">
 
 
 

@@ -48,7 +48,15 @@ MIT License
 
 ## 6 联系
 
-可以通过 icefrozen2013@hotmail.com 联系我
+方式一：
+
+Email: icefrozen2013@hotmail.com
+
+方式二：
+
+欢迎加群，一起学习、相互交流。
+
+<img src="./bxy_vue/public/qrcode_rust.jpg">
 
 
 
